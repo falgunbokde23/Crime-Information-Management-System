@@ -1,0 +1,56 @@
+	create table criminfo(
+	crimId int PRIMARY KEY auto_increment,
+	Cdate date,
+	cplace varchar(20),
+	Crime_name varchar(20),
+	Victims varchar(20),
+	Description_Crime varchar(40),
+	suspected_name varchar(20),
+	Case_Status varchar(20) default 'unsolve'
+	
+	);
+
+	create table criminal(
+	cid int primary key auto_increment,
+	cname varchar(20),
+	Age int,
+	Gender varchar(10),
+	Address varchar(30),
+	Face_mark varchar(20),
+	Crime_Area varchar(20),
+	Crime_name varchar(20)
+	
+	);
+
+	create table Criminal_Crime(
+	crimId int,
+	cid int,
+	foreign key(crimId) references criminfo(crimId),
+	foreign key (cid) references criminal(cid)
+	);
+
+
+	> soved and unsolved cases:-
+	    select count(*) from criminfo where case_status='solved';
+	
+	    select count(*) from criminfo where case_status='unsolved';
+	
+	
+	> current month crime:-
+	
+	   select count(*) from criminfo where date between '2022-09-01' AND '2022-09-30';
+	
+	> crime Area:-
+	   select * from criminfo where cplace='pune';
+	
+	
+	> change case status:-
+	
+	    update criminfo set case_status='solve' where crimeId=1;
+	
+	
+	> Check criminal wise crimes:-
+	
+	  select c.cname, cr.crime_name from criminal c INNER JOIN criminfo cr INNER JOIN criminal_crime ccr ON ccr.crimId=cr.crimId AND ccr.cid=c.cid AND cr.crime_name='murder';
+
+
