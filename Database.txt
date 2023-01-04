@@ -54,3 +54,6 @@
 	  select c.cname, cr.crime_name from criminal c INNER JOIN criminfo cr INNER JOIN criminal_crime ccr ON ccr.crimId=cr.crimId AND ccr.cid=c.cid AND cr.crime_name='murder';
 
 
+
+
+
