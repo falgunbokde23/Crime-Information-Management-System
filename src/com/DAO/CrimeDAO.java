@@ -16,6 +16,7 @@ public interface CrimeDAO {
 	public int Monthcount(String s1, String s2)throws Crime_InfoExcetion; 
 	public List<Crime_Info> CrimeArea(String s) throws Crime_InfoExcetion;
 	public String UpdateCrime(Crime_Info crimeInfo);
+	
 
 	
 	
