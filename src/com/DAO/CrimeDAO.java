@@ -17,6 +17,8 @@ public interface CrimeDAO {
 	public List<Crime_Info> CrimeArea(String s) throws Crime_InfoExcetion;
 	public String UpdateCrime(Crime_Info crimeInfo);
 	
+	
+	
 
 	
 	
