@@ -8,6 +8,7 @@ import com.bean.Crime_Info;
 import com.bean.Criminal_Info;
 
 
+
 public interface CrimeDAO {
 
 	public String AddCrime(Crime_Info crimeInfo);
