@@ -7,7 +7,6 @@
 	Description_Crime varchar(40),
 	suspected_name varchar(20),
 	Case_Status varchar(20) default 'unsolve'
-	
 	);
 
 	create table criminal(
