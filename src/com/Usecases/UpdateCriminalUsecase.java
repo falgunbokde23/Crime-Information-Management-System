@@ -14,12 +14,10 @@ public class UpdateCriminalUsecase {
 		
 		System.out.println("Enter the Name: ");
 		String name=sc.next();
-		
 		System.out.println("Enter the Cid: ");
 		int id=sc.nextInt();
 		
 		CriminalDAo dao=new CriminalaDAOImpl();
-
 		Criminal_Info criminal=new Criminal_Info();
 		
 		
@@ -27,7 +25,6 @@ public class UpdateCriminalUsecase {
 		criminal.setCid(id);
 		
       String result= dao.UpdateCriminal(criminal);
-		
 		System.out.println(result);
 		
 		
