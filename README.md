@@ -32,3 +32,7 @@ This backend application is developed using JAVA and to get the data from databa
 * This can be used by police:
  1. To get the Crime and Criminal data from the records.
  2. To register crime cases and criminals in records.
+ 
+ 
+ 
+ 
