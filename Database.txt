@@ -41,6 +41,7 @@
 	   select * from criminfo where cplace='pune';
 	
 	
+	
 	> change case status:-
 	
 	    update criminfo set case_status='solve' where crimeId=1;
