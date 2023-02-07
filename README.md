@@ -14,8 +14,6 @@ This backend application is developed using JAVA and to get the data from databa
 * SQL
 
 
-
-
 ### Functionalities :
 * Register Crime
 * Register Criminal
