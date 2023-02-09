@@ -20,6 +20,8 @@
 	Crime_name varchar(20)
 	
 	);
+	
+	
 
 	create table Criminal_Crime(
 	crimId int,
